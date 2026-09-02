@@ -1,0 +1,1430 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menu — Vivace | Ristorante Italiano</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,450;0,9..144,600;1,9..144,400;1,9..144,500&family=Jost:wght@400;500&family=Karla:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header id="siteHeader" class="scrolled">
+  <a href="index.html" class="logo"><img src="vivace.png" alt="Vivace"></a>
+  <nav class="links" id="navLinks">
+    <a href="menu.html">Menu</a>
+    <a href="galerie.html">Galerie</a>
+    <a href="index.html#contact">Contact</a>
+    <a href="https://wa.me/21650761000?text=Bonjour%2C%20je%20souhaite%20r%C3%A9server%20une%20table%20chez%20Vivace" class="btn nav-cta">Réserver</a>
+  </nav>
+  <button class="burger" id="burger" aria-label="Menu">☰</button>
+</header>
+
+<!-- ============ PAGE BANNER ============ -->
+<section class="page-banner">
+  <div class="wrap">
+    <span class="eyebrow" data-i18n="banner.eyebrow">Il nostro menu</span>
+    <h1 data-i18n="banner.title">La carte</h1>
+    <p data-i18n="banner.desc">Des produits choisis avec soin, des recettes transmises — chaque plat a été pensé pour raconter l'Italie.</p>
+
+    <!-- Language Switcher -->
+    <div class="banner-lang">
+      <div class="lang-switcher" id="langSwitcher">
+        <button class="lang-btn" id="langBtn" aria-expanded="false" aria-haspopup="listbox">
+          <svg class="lang-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10A15.3 15.3 0 0 1 12 2z"/></svg>
+          <span id="langLabel">Français</span>
+          <svg class="lang-arrow" viewBox="0 0 12 12" fill="currentColor"><path d="M2.5 4.5L6 8l3.5-3.5"/></svg>
+        </button>
+        <div class="lang-dropdown" id="langDropdown" role="listbox">
+          <button class="lang-option active" data-lang="fr" role="option"><span class="lang-flag">🇫🇷</span> Français</button>
+          <button class="lang-option" data-lang="it" role="option"><span class="lang-flag">🇮🇹</span> Italiano</button>
+          <button class="lang-option" data-lang="en" role="option"><span class="lang-flag">🇬🇧</span> English</button>
+          <button class="lang-option" data-lang="ar" role="option"><span class="lang-flag">🇹🇳</span> العربية</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STICKY CATEGORY TABS ============ -->
+<nav class="menu-tabs" id="menuTabs">
+  <a href="#salades" data-i18n="tab.salades">Salades</a>
+  <a href="#carpaccio" data-i18n="tab.carpaccio">Carpaccio</a>
+  <a href="#entrees" data-i18n="tab.entrees">Entrées Chaudes</a>
+  <a href="#pasta" data-i18n="tab.pasta">Pasta</a>
+  <a href="#risotto" data-i18n="tab.risotto">Risotto</a>
+  <a href="#ravioli" data-i18n="tab.ravioli">Ravioli</a>
+  <a href="#terre" data-i18n="tab.terre">Plats de Terre</a>
+  <a href="#mer" data-i18n="tab.mer">Plats de Mer</a>
+  <a href="#pizza" data-i18n="tab.pizza">Pizza</a>
+  <a href="#desserts" data-i18n="tab.desserts">Desserts</a>
+  <a href="#boissons" data-i18n="tab.boissons">Boissons</a>
+</nav>
+
+<!-- ============ NOS SALADES ============ -->
+<section class="menu-section" id="salades">
+  <div class="wrap">
+    <div class="menu-section-head">
+      <span class="eyebrow" data-i18n="salades.eyebrow">Fraîcheur & couleurs</span>
+      <h2 class="serif" data-i18n="salades.title">Nos Salades</h2>
+      <div class="divider"></div>
+    </div>
+    <div class="menu-list">
+
+      <div class="menu-item">
+        <div class="menu-item-left">
+          <div class="menu-item-name">Salade Caprese</div>
+          <div class="menu-item-desc" data-i18n="salades.caprese">Tomates cerises, mozzarella et bocconcini, roquette fraîche, basilic, vinaigrette maison & crème balsamique.</div>
+        </div>
+        <div class="menu-item-price">21 DT</div>
+      </div>
+
+      <div class="menu-item">
+        <div class="menu-item-left">
+          <div class="menu-item-name">Salade Burrata</div>
+          <div class="menu-item-desc" data-i18n="salades.burrata">Burrata crémeuse, roquette, tomates cerises, champignons, aubergines grillées, courgettes, pesto, pistaches concassées et crème balsamique.</div>
+        </div>
+        <div class="menu-item-price">32 DT</div>
+      </div>
+
+      <div class="menu-item">
+        <div class="menu-item-left">
+          <div class="menu-item-name">Salade Fruits de Mer</div>
+          <div class="menu-item-desc" data-i18n="salades.fruitsmer">Laitue, tomates cerises, calamars, moules, crevettes et chevrettes, relevés d'une vinaigrette citronnée et accompagnés de kiwi frais.</div>
+        </div>
+        <div class="menu-item-price">36 DT</div>
+      </div>
+
+      <div class="menu-item">
+        <div class="menu-item-left">
+          <div class="menu-item-name">Salade César</div>
+          <div class="menu-item-desc" data-i18n="salades.cesar">Laitue croquante, poulet grillé, parmesan, tomates cerises, roquette, croûtons dorés, amandes effilées, sauce César & crème balsamique.</div>
+        </div>
+        <div class="menu-item-price">28 DT</div>
+      </div>
+
+      <div class="menu-item">
+        <div class="menu-item-left">
+          <div class="menu-item-name">Salade Vivace</div>
+          <div class="menu-item-desc" data-i18n="salades.vivace">Laitue, lollo rosso, crevettes, tomates cerises, pêche fraîche, parmesan, pignons et vinaigrette au safran.</div>
+        </div>
+        <div class="menu-item-price">32 DT</div>
+      </div>
+
+      <div class="menu-item">
+        <div class="menu-item-left">
+          <div class="menu-item-name">Salade Roquettes</div>
+          <div class="menu-item-desc" data-i18n="salades.roquettes">Salade roquette, tomate cerise, pignon, parmesan, huile d'olive.</div>
+        </div>
+        <div class="menu-item-price">21 DT</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ CARPACCIO ============ -->
+<section class="menu-section" id="carpaccio">
+  <div class="wrap">
+    <div class="menu-section-head">
+      <span class="eyebrow" data-i18n="carpaccio.eyebrow">Finesse & élégance</span>
+      <h2 class="serif">Carpaccio</h2>
+      <div class="divider"></div>
+    </div>
+    <div class="menu-list">
+
+      <div class="menu-item">
+        <div class="menu-item-left">
+          <div class="menu-item-name">Carpaccio di Manzo</div>
+          <div class="menu-item-desc" data-i18n="carpaccio.manzo">Fines tranches de bœuf, roquette, copeaux de parmesan, huile d'olive extra vierge et citron. Un classique italien, frais et raffiné.</div>
+        </div>
+        <div class="menu-item-price">35 DT</div>
+      </div>
+
+      <div class="menu-item">
+        <div class="menu-item-left">
+          <div class="menu-item-name">Carpaccio de Crevettes</div>
+          <div class="menu-item-desc" data-i18n="carpaccio.crevettes">De délicates crevettes crues, sublimées par une vinaigrette au citron, de l'huile d'olive extra vierge et une touche d'aneth.</div>
+        </div>
+        <div class="menu-item-price">38 DT</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ ENTRÉES CHAUDES ============ -->
+<section class="menu-section" id="entrees">
+  <div class="wrap">
+    <div class="menu-section-head">
+      <span class="eyebrow" data-i18n="entrees.eyebrow">Pour commencer</span>
+      <h2 class="serif" data-i18n="entrees.title">Entrées Chaudes</h2>
+      <div class="divider"></div>
+    </div>
+    <div class="menu-list">
+
+      <div class="menu-item">
+        <div class="menu-item-left">
+          <div class="menu-item-name">Aubergines à la Parmigiana</div>
+          <div class="menu-item-desc" data-i18n="entrees.parmigiana">Aubergines fondantes gratinées à la mozzarella et au parmesan, sublimées par un filet d'huile d'olive.</div>
+        </div>
+        <div class="menu-item-price">32 DT</div>
+      </div>
+
+      <div class="menu-item">
+        <div class="menu-item-left">
+          <div class="menu-item-name">Moules Sautées</div>
+          <div class="menu-item-desc" data-i18n="entrees.moules">Moules fraîches sautées à l'huile d'olive, ail, citron et persil.</div>
+        </div>
+        <div class="menu-item-price">30 DT</div>
+      </div>
+
+      <div class="menu-item">
+        <div class="menu-item-left">
+          <div class="menu-item-name">Frito Misto <span class="tag" data-i18n="tag.2pax">2 Pax</span></div>
+          <div class="menu-item-desc" data-i18n="entrees.frito">Un assortiment croustillant de calamars, crevettes, rougets, servi avec sauces maison. À partager en toute convivialité.</div>
+        </div>
+        <div class="menu-item-price">82 DT</div>
+      </div>
+
+      <div class="menu-item">
+        <div class="menu-item-left">
+          <div class="menu-item-name">Crevettes Sautées à l'Ail</div>
+          <div class="menu-item-desc" data-i18n="entrees.crevettes">Crevettes sautées à l'huile d'olive avec ail, tomates cerises et persil frais.</div>
+        </div>
+        <div class="menu-item-price">36 DT</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ PASTA ============ -->
+<section class="menu-section" id="pasta">
+  <div class="wrap">
+    <div class="menu-section-head">
+      <span class="eyebrow" data-i18n="pasta.eyebrow">Les classiques italiens</span>
+      <h2 class="serif">Pasta</h2>
+      <div class="divider"></div>
+    </div>
+    <div class="menu-list">
+
+      <div class="menu-item">
+        <div class="menu-item-left">
+          <div class="menu-item-name">Alfredo</div>
+          <div class="menu-item-desc" data-i18n="pasta.alfredo">Penne au poulet, champignons, crème, parmesan et basilic. Une recette onctueuse inspirée des classiques italiens.</div>
+        </div>
+        <div class="menu-item-price">29 DT</div>
+      </div>
+
+      <div class="menu-item">
+        <div class="menu-item-left">
+          <div class="menu-item-name">Safran & Crevettes</div>
+          <div class="menu-item-desc" data-i18n="pasta.safran">Penne à la crème safranée, crevettes, chevrettes, œufs de lump, parmesan, basilic et tomates séchées.</div>
+        </div>
+        <div class="menu-item-price">45 DT</div>
+      </div>
+
+      <div class="menu-item">
+        <div class="menu-item-left">
+          <div class="menu-item-name">Fruits de Mer Sauce Blanche</div>
+          <div class="menu-item-desc" data-i18n="pasta.fmblanche">Spaghetti aux fruits de mer dans une sauce crémeuse, relevées de tomates cerises et basilic frais. Douceur et générosité.</div>
+        </div>
+        <div class="menu-item-price">48 DT</div>
+      </div>
+
+      <div class="menu-item">
+        <div class="menu-item-left">
+          <div class="menu-item-name">Aglio e Olio</div>
+          <div class="menu-item-desc" data-i18n="pasta.aglio">Linguine sautées à l'huile d'olive, ail, persil & piment.</div>
+        </div>
+        <div class="menu-item-price">28 DT</div>
+      </div>
+
+      <div class="menu-item">
+        <div class="menu-item-left">
+          <div class="menu-item-name">Arrabiata</div>
+          <div class="menu-item-desc" data-i18n="pasta.arrabiata">Spaghetti dans une sauce tomate relevée d'ail, oignon, tomates cerises, huile d'olive, persil et piment de Cayenne.</div>
+        </div>
+        <div class="menu-item-price">25 DT</div>
+      </div>
+
+      <div class="menu-item">
+        <div class="menu-item-left">
+          <div class="menu-item-name">Fruits de Mer</div>
+          <div class="menu-item-desc" data-i18n="pasta.fruitsmer">Spaghetti aux calamars, moules, crevettes et chevrettes, préparées à l'ail et huile d'olive ou dans une sauce tomate parfumée au basilic.</div>
+        </div>
+        <div class="menu-item-price">42 DT</div>
+      </div>
+
+      <div class="menu-item">
+        <div class="menu-item-left">
+          <div class="menu-item-name">Burrata</div>
+          <div class="menu-item-desc" data-i18n="pasta.burrata">Pâtes au pesto crémeux, burrata fondante, tomates séchées et pistaches concassées. Une recette gourmande et ensoleillée.</div>
+        </div>
+        <div class="menu-item-price">38 DT</div>
+      </div>
+
+      <div class="menu-item">
+        <div class="menu-item-left">
+          <div class="menu-item-name">Vongoli</div>
+          <div class="menu-item-desc" data-i18n="pasta.vongoli">Linguine aux palourdes, ail, huile d'olive, persil et basilic. Un grand classique des côtes italiennes.</div>
+        </div>
+        <div class="menu-item-price">28 DT</div>
+      </div>
+
+      <div class="menu-item">
+        <div class="menu-item-left">
+          <div class="menu-item-name">Pesto e Parmigiano</div>
+          <div class="menu-item-desc" data-i18n="pasta.pesto">Spaghetti au pesto, crème, parmesan, pignons & tomates séchées.</div>
+        </div>
+        <div class="menu-item-price">35 DT</div>
+      </div>
+
+      <div class="menu-item">
+        <div class="menu-item-left">
+          <div class="menu-item-name">Truffe Noir</div>
+          <div class="menu-item-desc" data-i18n="pasta.truffe">Linguine à la crème de truffe, champignons, parmesan et huile d'olive. Une expérience riche et raffinée.</div>
+        </div>
+        <div class="menu-item-price">38 DT</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ RISOTTO ============ -->
+<section class="menu-section" id="risotto">
+  <div class="wrap">
+    <div class="menu-section-head">
+      <span class="eyebrow" data-i18n="risotto.eyebrow">Crémeux & généreux</span>
+      <h2 class="serif">Risotto</h2>
+      <div class="divider"></div>
+    </div>
+    <div class="menu-list">
+
+      <div class="menu-item">
+        <div class="menu-item-left">
+          <div class="menu-item-name">Fruits de Mer</div>
+          <div class="menu-item-desc" data-i18n="risotto.fruitsmer">Risotto crémeux au parmesan, généreusement garni aux fruits de mer.</div>
+        </div>
+        <div class="menu-item-price">48 DT</div>
+      </div>
+
+      <div class="menu-item">
+        <div class="menu-item-left">
+          <div class="menu-item-name">Safran & Poulet</div>
+          <div class="menu-item-desc" data-i18n="risotto.safran">Risotto crémeux au safran, parmesan et poulet.</div>
+        </div>
+        <div class="menu-item-price">38 DT</div>
+      </div>
+
+      <div class="menu-item">
+        <div class="menu-item-left">
+          <div class="menu-item-name">Truffe Noir</div>
+          <div class="menu-item-desc" data-i18n="risotto.truffe">Risotto crémeux à la truffe noire, champignons & parmesan.</div>
+        </div>
+        <div class="menu-item-price">46 DT</div>
+      </div>
+
+      <div class="menu-item">
+        <div class="menu-item-left">
+          <div class="menu-item-name">Pesto e Parmigiano</div>
+          <div class="menu-item-desc" data-i18n="risotto.pesto">Risotto crémeux au pesto, pignon & parmigiano.</div>
+        </div>
+        <div class="menu-item-price">34 DT</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ RAVIOLI ============ -->
+<section class="menu-section" id="ravioli">
+  <div class="wrap">
+    <div class="menu-section-head">
+      <span class="eyebrow" data-i18n="ravioli.eyebrow">Farcis avec amour</span>
+      <h2 class="serif">Ravioli</h2>
+      <div class="divider"></div>
+    </div>
+    <div class="menu-list">
+
+      <div class="menu-item">
+        <div class="menu-item-left">
+          <div class="menu-item-name">Saumon & Crevettes</div>
+          <div class="menu-item-desc" data-i18n="ravioli.saumon">Raviolis servis dans une crème légère au saumon, crevettes, tomate, citron et aneth.</div>
+        </div>
+        <div class="menu-item-price">45 DT</div>
+      </div>
+
+      <div class="menu-item">
+        <div class="menu-item-left">
+          <div class="menu-item-name">Ricotta Épinard</div>
+          <div class="menu-item-desc" data-i18n="ravioli.ricotta">Raviolis farcis à la ricotta et aux épinards, nappés d'une sauce à la crème, relevés de noix et de parmesan.</div>
+        </div>
+        <div class="menu-item-price">29 DT</div>
+      </div>
+
+      <div class="menu-item">
+        <div class="menu-item-left">
+          <div class="menu-item-name">4 Fromages</div>
+          <div class="menu-item-desc" data-i18n="ravioli.fromages">Raviolis dans une sauce crémeuse au camembert, cheddar, gorgonzola & parmesan.</div>
+        </div>
+        <div class="menu-item-price">38 DT</div>
+      </div>
+
+      <div class="menu-item">
+        <div class="menu-item-left">
+          <div class="menu-item-name">Truffe Noir</div>
+          <div class="menu-item-desc" data-i18n="ravioli.truffe">Raviolis à la crème de truffe et champignons frais.</div>
+        </div>
+        <div class="menu-item-price">39 DT</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ PLATS DE TERRE ============ -->
+<section class="menu-section" id="terre">
+  <div class="wrap">
+    <div class="menu-section-head">
+      <span class="eyebrow" data-i18n="terre.eyebrow">Viandes & grillades</span>
+      <h2 class="serif" data-i18n="terre.title">Plats de Terre</h2>
+      <div class="divider"></div>
+    </div>
+    <div class="menu-list">
+
+      <div class="menu-item">
+        <div class="menu-item-left">
+          <div class="menu-item-name">Poulet Alla Parmigiana</div>
+          <div class="menu-item-desc" data-i18n="terre.parmigiana">Escalope de poulet gratinée à la mozzarella et au parmesan. Un grand classique réconfortant.</div>
+        </div>
+        <div class="menu-item-price">38 DT</div>
+      </div>
+
+      <div class="menu-item">
+        <div class="menu-item-left">
+          <div class="menu-item-name">Poulet Farci Ricotta & Épinards</div>
+          <div class="menu-item-desc" data-i18n="terre.farci">Suprême de poulet farci à la ricotta et aux épinards, délicatement gratiné. Une recette généreuse et fondante.</div>
+        </div>
+        <div class="menu-item-price">36 DT</div>
+      </div>
+
+      <div class="menu-item">
+        <div class="menu-item-left">
+          <div class="menu-item-name">Côte à l'Os Gratiné <span class="tag">400g</span></div>
+          <div class="menu-item-desc" data-i18n="terre.cotegratine">Côte à l'os gratiné au fromage mozzarella.</div>
+        </div>
+        <div class="menu-item-price">59 DT</div>
+      </div>
+
+      <div class="menu-item">
+        <div class="menu-item-left">
+          <div class="menu-item-name">Côte à l'Os Grillé <span class="tag">400g</span></div>
+          <div class="menu-item-desc" data-i18n="terre.cotegrille">Côte à l'os grillée, un plat savoureux et juteux.</div>
+        </div>
+        <div class="menu-item-price">49 DT</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ PLATS DE MER ============ -->
+<section class="menu-section" id="mer">
+  <div class="wrap">
+    <div class="menu-section-head">
+      <span class="eyebrow" data-i18n="mer.eyebrow">Trésors de la Méditerranée</span>
+      <h2 class="serif" data-i18n="mer.title">Plats de Mer</h2>
+      <div class="divider"></div>
+    </div>
+    <div class="menu-list">
+
+      <div class="menu-item">
+        <div class="menu-item-left">
+          <div class="menu-item-name">Saumon Alla Toscane</div>
+          <div class="menu-item-desc" data-i18n="mer.toscane">Pavé de saumon dans une sauce crémeuse aux épinards et tomates cerises.</div>
+        </div>
+        <div class="menu-item-price">48 DT</div>
+      </div>
+
+      <div class="menu-item">
+        <div class="menu-item-left">
+          <div class="menu-item-name">Saumon Grillé</div>
+          <div class="menu-item-desc" data-i18n="mer.saumongrille">Filet de saumon grillé à la perfection, assaisonné avec simplicité pour révéler toute la finesse du poisson.</div>
+        </div>
+        <div class="menu-item-price">42 DT</div>
+      </div>
+
+      <div class="menu-item">
+        <div class="menu-item-left">
+          <div class="menu-item-name">Marmite de Pêcheur</div>
+          <div class="menu-item-desc" data-i18n="mer.marmite">Un mélange de fruits de mer sautés à l'ail, huile d'olive, tomates cerises et basilic frais. Toute la richesse de la Méditerranée.</div>
+        </div>
+        <div class="menu-item-price">52 DT</div>
+      </div>
+
+      <div class="menu-item">
+        <div class="menu-item-left">
+          <div class="menu-item-name">Poisson Vivace</div>
+          <div class="menu-item-desc" data-i18n="mer.vivace">Filet de loup délicatement assaisonné et accompagné de chevrettes. Une rencontre harmonieuse entre terre et mer.</div>
+        </div>
+        <div class="menu-item-price">54 DT</div>
+      </div>
+
+      <div class="menu-item">
+        <div class="menu-item-left">
+          <div class="menu-item-name">Poisson Grillé</div>
+          <div class="menu-item-desc" data-i18n="mer.grille">Daurade ou loup grillé.</div>
+        </div>
+        <div class="menu-item-price">38 DT</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ PIZZA ============ -->
+<section class="menu-section" id="pizza">
+  <div class="wrap">
+    <div class="menu-section-head">
+      <span class="eyebrow" data-i18n="pizza.eyebrow">Cuites au feu de bois</span>
+      <h2 class="serif">Pizza</h2>
+      <div class="divider"></div>
+    </div>
+    <div class="menu-list">
+
+      <div class="menu-item">
+        <div class="menu-item-left">
+          <div class="menu-item-name">Margarita</div>
+          <div class="menu-item-desc" data-i18n="pizza.margarita">Sauce tomate maison, mozzarella, basilic frais.</div>
+        </div>
+        <div class="menu-item-price">22 DT</div>
+      </div>
+
+      <div class="menu-item">
+        <div class="menu-item-left">
+          <div class="menu-item-name">Végétarienne</div>
+          <div class="menu-item-desc" data-i18n="pizza.vegetarienne">Sauce tomate maison, légumes, champignon, bocconcini, basilic frais.</div>
+        </div>
+        <div class="menu-item-price">26 DT</div>
+      </div>
+
+      <div class="menu-item">
+        <div class="menu-item-left">
+          <div class="menu-item-name">Pepperoni</div>
+          <div class="menu-item-desc" data-i18n="pizza.pepperoni">Sauce tomate maison, pepperoni, mozzarella, basilic frais.</div>
+        </div>
+        <div class="menu-item-price">26 DT</div>
+      </div>
+
+      <div class="menu-item">
+        <div class="menu-item-left">
+          <div class="menu-item-name">Vivace</div>
+          <div class="menu-item-desc" data-i18n="pizza.vivace">Sauce blanche, crème de truffe, champignon frais, parmesan, noisette, roquette.</div>
+        </div>
+        <div class="menu-item-price">38 DT</div>
+      </div>
+
+      <div class="menu-item">
+        <div class="menu-item-left">
+          <div class="menu-item-name">Anchois</div>
+          <div class="menu-item-desc" data-i18n="pizza.anchois">Sauce tomate maison, anchois, olives noires, mozzarella, basilic frais.</div>
+        </div>
+        <div class="menu-item-price">22 DT</div>
+      </div>
+
+      <div class="menu-item">
+        <div class="menu-item-left">
+          <div class="menu-item-name">5 Fromages</div>
+          <div class="menu-item-desc" data-i18n="pizza.fromages">Sauce blanche, gorgonzola, mozzarella, sauce fromage bocconcini.</div>
+        </div>
+        <div class="menu-item-price">33 DT</div>
+      </div>
+
+      <div class="menu-item">
+        <div class="menu-item-left">
+          <div class="menu-item-name">Tonno</div>
+          <div class="menu-item-desc" data-i18n="pizza.tonno">Sauce tomate maison, thon, olives noires, mozzarella, basilic frais.</div>
+        </div>
+        <div class="menu-item-price">29 DT</div>
+      </div>
+
+      <div class="menu-item">
+        <div class="menu-item-left">
+          <div class="menu-item-name">Burrata</div>
+          <div class="menu-item-desc" data-i18n="pizza.burrata">Sauce pesto, burrata fraîche, pistache, roquette, crème balsamique.</div>
+        </div>
+        <div class="menu-item-price">38 DT</div>
+      </div>
+
+      <div class="menu-item">
+        <div class="menu-item-left">
+          <div class="menu-item-name">Funghi</div>
+          <div class="menu-item-desc" data-i18n="pizza.funghi">Sauce tomate maison, mozzarella, champignon frais.</div>
+        </div>
+        <div class="menu-item-price">28 DT</div>
+      </div>
+
+      <div class="menu-item">
+        <div class="menu-item-left">
+          <div class="menu-item-name">Pizza Chevrettes</div>
+          <div class="menu-item-desc" data-i18n="pizza.chevrettes">Sauce tomate maison, chevrettes, mozzarella, basilic frais.</div>
+        </div>
+        <div class="menu-item-price">38 DT</div>
+      </div>
+
+      <div class="menu-item">
+        <div class="menu-item-left">
+          <div class="menu-item-name">Ricotta Poulet</div>
+          <div class="menu-item-desc" data-i18n="pizza.ricotta">Sauce pesto, mozzarella, ricotta, épinard, noix.</div>
+        </div>
+        <div class="menu-item-price">29 DT</div>
+      </div>
+
+      <div class="menu-item">
+        <div class="menu-item-left">
+          <div class="menu-item-name">Marinara</div>
+          <div class="menu-item-desc" data-i18n="pizza.marinara">Sauce tomate, ail, origan, huile d'olive.</div>
+        </div>
+        <div class="menu-item-price">22 DT</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ DESSERTS ============ -->
+<section class="menu-section" id="desserts">
+  <div class="wrap">
+    <div class="menu-section-head">
+      <span class="eyebrow" data-i18n="desserts.eyebrow">La dolce vita</span>
+      <h2 class="serif" data-i18n="desserts.title">Desserts Signature</h2>
+      <div class="divider"></div>
+    </div>
+    <div class="menu-list">
+
+      <div class="menu-item">
+        <div class="menu-item-left">
+          <div class="menu-item-name">Tiramisu Fontana di Trevi</div>
+          <div class="menu-item-desc" data-i18n="desserts.tiramisu">Une caresse de mascarpone, un souffle de café et de cacao.</div>
+        </div>
+        <div class="menu-item-price">20 DT</div>
+      </div>
+
+      <div class="menu-item">
+        <div class="menu-item-left">
+          <div class="menu-item-name">Panna Cotta</div>
+          <div class="menu-item-desc" data-i18n="desserts.pannacotta">Légère comme un nuage italien, délicatement vanillée, elle fond en bouche avec une élégance infinie.</div>
+        </div>
+        <div class="menu-item-price">14 DT</div>
+      </div>
+
+      <div class="menu-item">
+        <div class="menu-item-left">
+          <div class="menu-item-name">San Sebastian</div>
+          <div class="menu-item-desc" data-i18n="desserts.sansebastian">Le célèbre cheesecake basque à la robe intensément caramélisée, au cœur fondant et crémeux.</div>
+        </div>
+        <div class="menu-item-price">16 DT</div>
+      </div>
+
+      <div class="menu-item">
+        <div class="menu-item-left">
+          <div class="menu-item-name">Crème Brûlée</div>
+          <div class="menu-item-desc" data-i18n="desserts.cremebrulee">Sous une fine croûte de caramel doré se cache une crème soyeuse.</div>
+        </div>
+        <div class="menu-item-price">16 DT</div>
+      </div>
+
+      <div class="menu-item">
+        <div class="menu-item-left">
+          <div class="menu-item-name">Fondant Chocolat</div>
+          <div class="menu-item-desc" data-i18n="desserts.fondant">Une coque délicate qui s'ouvre sur un cœur de chocolat coulant, intense et irrésistiblement gourmand.</div>
+        </div>
+        <div class="menu-item-price">13 DT</div>
+      </div>
+
+      <div class="menu-item">
+        <div class="menu-item-left">
+          <div class="menu-item-name">Cheese Cake</div>
+          <div class="menu-item-desc" data-i18n="desserts.cheesecake">Un équilibre parfait entre fraîcheur et onctuosité, posé sur un biscuit délicatement croustillant.</div>
+        </div>
+        <div class="menu-item-price">16 DT</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ BOISSONS ============ -->
+<section class="menu-section" id="boissons">
+  <div class="wrap">
+    <div class="menu-section-head">
+      <span class="eyebrow" data-i18n="boissons.eyebrow">Rafraîchissements</span>
+      <h2 class="serif" data-i18n="boissons.title">Boissons</h2>
+      <div class="divider"></div>
+    </div>
+    <div class="menu-list">
+
+      <div class="menu-item">
+        <div class="menu-item-left">
+          <div class="menu-item-name">Eau Minérale</div>
+        </div>
+        <div class="menu-item-price">5 DT</div>
+      </div>
+
+      <div class="menu-item">
+        <div class="menu-item-left">
+          <div class="menu-item-name">Eau Gazéifiée</div>
+        </div>
+        <div class="menu-item-price">5 DT</div>
+      </div>
+
+      <div class="menu-item">
+        <div class="menu-item-left">
+          <div class="menu-item-name">Soda</div>
+        </div>
+        <div class="menu-item-price">5 DT</div>
+      </div>
+
+      <div class="menu-item">
+        <div class="menu-item-left">
+          <div class="menu-item-name">Bière Sans Alcool</div>
+        </div>
+        <div class="menu-item-price">6 DT</div>
+      </div>
+
+      <div class="menu-item">
+        <div class="menu-item-left">
+          <div class="menu-item-name">Affogato</div>
+        </div>
+        <div class="menu-item-price">10 DT</div>
+      </div>
+
+      <div class="menu-item">
+        <div class="menu-item-left">
+          <div class="menu-item-name">Citronnade</div>
+        </div>
+        <div class="menu-item-price">7 DT</div>
+      </div>
+
+      <div class="menu-item">
+        <div class="menu-item-left">
+          <div class="menu-item-name">Espresso</div>
+        </div>
+        <div class="menu-item-price">5 DT</div>
+      </div>
+
+      <div class="menu-item">
+        <div class="menu-item-left">
+          <div class="menu-item-name">Mojito</div>
+        </div>
+        <div class="menu-item-price">13 DT</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA BAND ============ -->
+<section class="menu-cta-band">
+  <div class="wrap">
+    <h2 data-i18n="cta.title">Une envie qui ne peut plus attendre ?</h2>
+    <p data-i18n="cta.desc">Réservez votre table chez Vivace en quelques secondes.</p>
+    <a href="https://wa.me/21650761000?text=Bonjour%2C%20je%20souhaite%20r%C3%A9server%20une%20table%20chez%20Vivace" class="btn btn-primary" data-i18n="cta.btn">Réserver sur WhatsApp</a>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <a href="index.html" class="logo"><img src="vivace.png" alt="Vivace"></a>
+        <p style="margin-top:14px; max-width:260px; font-size:0.85rem; opacity:0.7;" data-i18n="footer.tagline">Cucina italiana autentica, dans une ambiance qui vous enveloppe.</p>
+      </div>
+      <nav class="foot-nav">
+        <a href="menu.html">Menu</a>
+        <a href="index.html#galerie" data-i18n="footer.galerie">Galerie</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+      <div class="foot-contact">
+        Av Habib Bourgiba , Hammamet 8050<br>
+        +216 50 761 000<br>
+        contact@vivace-restaurant.fr
+        <div class="foot-social">
+          <a href="https://www.facebook.com/profile.php?id=61591700709214&sk=about" target="_blank" rel="noopener" aria-label="Vivace sur Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 12.06C22 6.51 17.52 2 12 2S2 6.51 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.91h2.54V9.85c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.23.2 2.23.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.91h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/vivace_26?igsi=MW9xc2ZxYXVmOWd2ag%3D%3D" target="_blank" rel="noopener" aria-label="Vivace sur Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span data-i18n="footer.made">Fait avec 🍝 à Paris</span>
+      <span>© 2026 Vivace — Tous droits réservés</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ STICKY WHATSAPP ============ -->
+<a href="https://wa.me/21650761000?text=Bonjour%2C%20je%20souhaite%20r%C3%A9server%20une%20table%20chez%20Vivace" class="wa-float" target="_blank">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.29-1.39c1.44.79 3.06 1.2 4.71 1.2h.01c5.46 0 9.9-4.45 9.9-9.91C21.91 6.45 17.5 2 12.04 2zm5.8 14.15c-.24.68-1.4 1.31-1.94 1.39-.5.08-1.12.11-1.81-.11-.42-.13-.95-.31-1.64-.6-2.88-1.24-4.76-4.15-4.9-4.34-.14-.19-1.17-1.56-1.17-2.97 0-1.41.74-2.11 1-2.4.26-.29.57-.36.76-.36h.55c.18 0 .42-.02.65.5.24.55.82 1.94.89 2.08.07.14.11.31.02.5-.09.19-.14.31-.28.48-.14.17-.29.37-.42.5-.14.14-.28.29-.12.57.16.28.72 1.19 1.55 1.92 1.06.95 1.96 1.24 2.24 1.38.28.14.44.12.6-.07.16-.19.68-.79.86-1.06.18-.28.36-.23.6-.14.24.09 1.53.72 1.79.85.26.14.43.2.5.31.06.13.06.71-.18 1.39z"/></svg>
+  <span data-i18n="wa.label">Réserver</span>
+</a>
+
+<!-- ============ TRANSLATIONS & LANGUAGE SCRIPT ============ -->
+<script>
+const translations = {
+  fr: {
+    // Banner
+    "banner.eyebrow": "Il nostro menu",
+    "banner.title": "La carte",
+    "banner.desc": "Des produits choisis avec soin, des recettes transmises — chaque plat a été pensé pour raconter l'Italie.",
+    // Tabs
+    "tab.salades": "Salades",
+    "tab.carpaccio": "Carpaccio",
+    "tab.entrees": "Entrées Chaudes",
+    "tab.pasta": "Pasta",
+    "tab.risotto": "Risotto",
+    "tab.ravioli": "Ravioli",
+    "tab.terre": "Plats de Terre",
+    "tab.mer": "Plats de Mer",
+    "tab.pizza": "Pizza",
+    "tab.desserts": "Desserts",
+    "tab.boissons": "Boissons",
+    // Salades
+    "salades.eyebrow": "Fraîcheur & couleurs",
+    "salades.title": "Nos Salades",
+    "salades.caprese": "Tomates cerises, mozzarella et bocconcini, roquette fraîche, basilic, vinaigrette maison & crème balsamique.",
+    "salades.burrata": "Burrata crémeuse, roquette, tomates cerises, champignons, aubergines grillées, courgettes, pesto, pistaches concassées et crème balsamique.",
+    "salades.fruitsmer.name": "Salade Fruits de Mer",
+    "salades.fruitsmer": "Laitue, tomates cerises, calamars, moules, crevettes et chevrettes, relevés d'une vinaigrette citronnée et accompagnés de kiwi frais.",
+    "salades.cesar.name": "Salade César",
+    "salades.cesar": "Laitue croquante, poulet grillé, parmesan, tomates cerises, roquette, croûtons dorés, amandes effilées, sauce César & crème balsamique.",
+    "salades.vivace": "Laitue, lollo rosso, crevettes, tomates cerises, pêche fraîche, parmesan, pignons et vinaigrette au safran.",
+    "salades.roquettes.name": "Salade Roquettes",
+    "salades.roquettes": "Salade roquette, tomate cerise, pignon, parmesan, huile d'olive.",
+    // Carpaccio
+    "carpaccio.eyebrow": "Finesse & élégance",
+    "carpaccio.manzo": "Fines tranches de bœuf, roquette, copeaux de parmesan, huile d'olive extra vierge et citron. Un classique italien, frais et raffiné.",
+    "carpaccio.crevettes.name": "Carpaccio de Crevettes",
+    "carpaccio.crevettes": "De délicates crevettes crues, sublimées par une vinaigrette au citron, de l'huile d'olive extra vierge et une touche d'aneth.",
+    // Entrées
+    "entrees.eyebrow": "Pour commencer",
+    "entrees.title": "Entrées Chaudes",
+    "entrees.parmigiana.name": "Aubergines à la Parmigiana",
+    "entrees.parmigiana": "Aubergines fondantes gratinées à la mozzarella et au parmesan, sublimées par un filet d'huile d'olive.",
+    "entrees.moules.name": "Moules Sautées",
+    "entrees.moules": "Moules fraîches sautées à l'huile d'olive, ail, citron et persil.",
+    "tag.2pax": "2 Pax",
+    "entrees.frito": "Un assortiment croustillant de calamars, crevettes, rougets, servi avec sauces maison. À partager en toute convivialité.",
+    "entrees.crevettes.name": "Crevettes Sautées à l'Ail",
+    "entrees.crevettes": "Crevettes sautées à l'huile d'olive avec ail, tomates cerises et persil frais.",
+    // Pasta
+    "pasta.eyebrow": "Les classiques italiens",
+    "pasta.alfredo": "Penne au poulet, champignons, crème, parmesan et basilic. Une recette onctueuse inspirée des classiques italiens.",
+    "pasta.safran.name": "Safran & Crevettes",
+    "pasta.safran": "Penne à la crème safranée, crevettes, chevrettes, œufs de lump, parmesan, basilic et tomates séchées.",
+    "pasta.fmblanche.name": "Fruits de Mer Sauce Blanche",
+    "pasta.fmblanche": "Spaghetti aux fruits de mer dans une sauce crémeuse, relevées de tomates cerises et basilic frais. Douceur et générosité.",
+    "pasta.aglio": "Linguine sautées à l'huile d'olive, ail, persil & piment.",
+    "pasta.arrabiata": "Spaghetti dans une sauce tomate relevée d'ail, oignon, tomates cerises, huile d'olive, persil et piment de Cayenne.",
+    "pasta.fruitsmer.name": "Fruits de Mer",
+    "pasta.fruitsmer": "Spaghetti aux calamars, moules, crevettes et chevrettes, préparées à l'ail et huile d'olive ou dans une sauce tomate parfumée au basilic.",
+    "pasta.burrata": "Pâtes au pesto crémeux, burrata fondante, tomates séchées et pistaches concassées. Une recette gourmande et ensoleillée.",
+    "pasta.vongoli": "Linguine aux palourdes, ail, huile d'olive, persil et basilic. Un grand classique des côtes italiennes.",
+    "pasta.pesto": "Spaghetti au pesto, crème, parmesan, pignons & tomates séchées.",
+    "pasta.truffe.name": "Truffe Noir",
+    "pasta.truffe": "Linguine à la crème de truffe, champignons, parmesan et huile d'olive. Une expérience riche et raffinée.",
+    // Risotto
+    "risotto.eyebrow": "Crémeux & généreux",
+    "risotto.fruitsmer.name": "Fruits de Mer",
+    "risotto.fruitsmer": "Risotto crémeux au parmesan, généreusement garni aux fruits de mer.",
+    "risotto.safran.name": "Safran & Poulet",
+    "risotto.safran": "Risotto crémeux au safran, parmesan et poulet.",
+    "risotto.truffe.name": "Truffe Noir",
+    "risotto.truffe": "Risotto crémeux à la truffe noire, champignons & parmesan.",
+    "risotto.pesto": "Risotto crémeux au pesto, pignon & parmigiano.",
+    // Ravioli
+    "ravioli.eyebrow": "Farcis avec amour",
+    "ravioli.saumon.name": "Saumon & Crevettes",
+    "ravioli.saumon": "Raviolis servis dans une crème légère au saumon, crevettes, tomate, citron et aneth.",
+    "ravioli.ricotta.name": "Ricotta Épinard",
+    "ravioli.ricotta": "Raviolis farcis à la ricotta et aux épinards, nappés d'une sauce à la crème, relevés de noix et de parmesan.",
+    "ravioli.fromages.name": "4 Fromages",
+    "ravioli.fromages": "Raviolis dans une sauce crémeuse au camembert, cheddar, gorgonzola & parmesan.",
+    "ravioli.truffe.name": "Truffe Noir",
+    "ravioli.truffe": "Raviolis à la crème de truffe et champignons frais.",
+    // Terre
+    "terre.eyebrow": "Viandes & grillades",
+    "terre.title": "Plats de Terre",
+    "terre.parmigiana": "Escalope de poulet gratinée à la mozzarella et au parmesan. Un grand classique réconfortant.",
+    "terre.farci.name": "Poulet Farci Ricotta & Épinards",
+    "terre.farci": "Suprême de poulet farci à la ricotta et aux épinards, délicatement gratiné. Une recette généreuse et fondante.",
+    "terre.cotegratine.name": "Côte à l'Os Gratiné",
+    "terre.cotegratine": "Côte à l'os gratiné au fromage mozzarella.",
+    "terre.cotegrille.name": "Côte à l'Os Grillé",
+    "terre.cotegrille": "Côte à l'os grillée, un plat savoureux et juteux.",
+    // Mer
+    "mer.eyebrow": "Trésors de la Méditerranée",
+    "mer.title": "Plats de Mer",
+    "mer.toscane": "Pavé de saumon dans une sauce crémeuse aux épinards et tomates cerises.",
+    "mer.saumongrille.name": "Saumon Grillé",
+    "mer.saumongrille": "Filet de saumon grillé à la perfection, assaisonné avec simplicité pour révéler toute la finesse du poisson.",
+    "mer.marmite.name": "Marmite de Pêcheur",
+    "mer.marmite": "Un mélange de fruits de mer sautés à l'ail, huile d'olive, tomates cerises et basilic frais. Toute la richesse de la Méditerranée.",
+    "mer.vivace.name": "Poisson Vivace",
+    "mer.vivace": "Filet de loup délicatement assaisonné et accompagné de chevrettes. Une rencontre harmonieuse entre terre et mer.",
+    "mer.grille.name": "Poisson Grillé",
+    "mer.grille": "Daurade ou loup grillé.",
+    // Pizza
+    "pizza.eyebrow": "Cuites au feu de bois",
+    "pizza.margarita": "Sauce tomate maison, mozzarella, basilic frais.",
+    "pizza.vegetarienne.name": "Végétarienne",
+    "pizza.vegetarienne": "Sauce tomate maison, légumes, champignon, bocconcini, basilic frais.",
+    "pizza.pepperoni": "Sauce tomate maison, pepperoni, mozzarella, basilic frais.",
+    "pizza.vivace": "Sauce blanche, crème de truffe, champignon frais, parmesan, noisette, roquette.",
+    "pizza.anchois": "Sauce tomate maison, anchois, olives noires, mozzarella, basilic frais.",
+    "pizza.fromages.name": "5 Fromages",
+    "pizza.fromages": "Sauce blanche, gorgonzola, mozzarella, sauce fromage bocconcini.",
+    "pizza.tonno": "Sauce tomate maison, thon, olives noires, mozzarella, basilic frais.",
+    "pizza.burrata": "Sauce pesto, burrata fraîche, pistache, roquette, crème balsamique.",
+    "pizza.funghi": "Sauce tomate maison, mozzarella, champignon frais.",
+    "pizza.chevrettes.name": "Pizza Chevrettes",
+    "pizza.chevrettes": "Sauce tomate maison, chevrettes, mozzarella, basilic frais.",
+    "pizza.ricotta.name": "Ricotta Poulet",
+    "pizza.ricotta": "Sauce pesto, mozzarella, ricotta, épinard, noix.",
+    "pizza.marinara": "Sauce tomate, ail, origan, huile d'olive.",
+    // Desserts
+    "desserts.eyebrow": "La dolce vita",
+    "desserts.title": "Desserts Signature",
+    "desserts.tiramisu": "Une caresse de mascarpone, un souffle de café et de cacao.",
+    "desserts.pannacotta": "Légère comme un nuage italien, délicatement vanillée, elle fond en bouche avec une élégance infinie.",
+    "desserts.sansebastian": "Le célèbre cheesecake basque à la robe intensément caramélisée, au cœur fondant et crémeux.",
+    "desserts.cremebrulee.name": "Crème Brûlée",
+    "desserts.cremebrulee": "Sous une fine croûte de caramel doré se cache une crème soyeuse.",
+    "desserts.fondant.name": "Fondant Chocolat",
+    "desserts.fondant": "Une coque délicate qui s'ouvre sur un cœur de chocolat coulant, intense et irrésistiblement gourmand.",
+    "desserts.cheesecake": "Un équilibre parfait entre fraîcheur et onctuosité, posé sur un biscuit délicatement croustillant.",
+    // Boissons
+    "boissons.eyebrow": "Rafraîchissements",
+    "boissons.title": "Boissons",
+    "boissons.eau.name": "Eau Minérale",
+    "boissons.gazeuse.name": "Eau Gazéifiée",
+    "boissons.biere.name": "Bière Sans Alcool",
+    "boissons.citronnade.name": "Citronnade",
+    // CTA
+    "cta.title": "Une envie qui ne peut plus attendre ?",
+    "cta.desc": "Réservez votre table chez Vivace en quelques secondes.",
+    "cta.btn": "Réserver sur WhatsApp",
+    // Footer
+    "footer.tagline": "Cucina italiana autentica, dans une ambiance qui vous enveloppe.",
+    "footer.galerie": "Galerie",
+    "footer.made": "Fait avec 🍝 à Paris",
+    // WhatsApp
+    "wa.label": "Réserver"
+  },
+
+  it: {
+    "banner.eyebrow": "Il nostro menu",
+    "banner.title": "Il menu",
+    "banner.desc": "Prodotti scelti con cura, ricette tramandate — ogni piatto è pensato per raccontare l'Italia.",
+    "tab.salades": "Insalate",
+    "tab.carpaccio": "Carpaccio",
+    "tab.entrees": "Antipasti Caldi",
+    "tab.pasta": "Pasta",
+    "tab.risotto": "Risotto",
+    "tab.ravioli": "Ravioli",
+    "tab.terre": "Piatti di Terra",
+    "tab.mer": "Piatti di Mare",
+    "tab.pizza": "Pizza",
+    "tab.desserts": "Dolci",
+    "tab.boissons": "Bevande",
+    "salades.eyebrow": "Freschezza & colori",
+    "salades.title": "Le Nostre Insalate",
+    "salades.caprese": "Pomodorini, mozzarella e bocconcini, rucola fresca, basilico, vinaigrette della casa & crema di balsamico.",
+    "salades.burrata": "Burrata cremosa, rucola, pomodorini, funghi, melanzane grigliate, zucchine, pesto, pistacchi tritati e crema di balsamico.",
+    "salades.fruitsmer.name": "Salade Fruits de Mer",
+    "salades.fruitsmer": "Lattuga, pomodorini, calamari, cozze, gamberi e gamberetti, conditi con vinaigrette al limone e accompagnati da kiwi fresco.",
+    "salades.cesar.name": "Salade César",
+    "salades.cesar": "Lattuga croccante, pollo grigliato, parmigiano, pomodorini, rucola, crostini dorati, mandorle a lamelle, salsa Caesar & crema di balsamico.",
+    "salades.vivace": "Lattuga, lollo rosso, gamberi, pomodorini, pesca fresca, parmigiano, pinoli e vinaigrette allo zafferano.",
+    "salades.roquettes.name": "Salade Roquettes",
+    "salades.roquettes": "Insalata di rucola, pomodorini, pinoli, parmigiano, olio d'oliva.",
+    "carpaccio.eyebrow": "Finezza & eleganza",
+    "carpaccio.manzo": "Fettine sottili di manzo, rucola, scaglie di parmigiano, olio extravergine d'oliva e limone. Un classico italiano, fresco e raffinato.",
+    "carpaccio.crevettes.name": "Carpaccio de Crevettes",
+    "carpaccio.crevettes": "Delicati gamberi crudi, esaltati da una vinaigrette al limone, olio extravergine d'oliva e un tocco di aneto.",
+    "entrees.eyebrow": "Per cominciare",
+    "entrees.title": "Antipasti Caldi",
+    "entrees.parmigiana.name": "Aubergines à la Parmigiana",
+    "entrees.parmigiana": "Melanzane fondenti gratinate con mozzarella e parmigiano, esaltate da un filo d'olio d'oliva.",
+    "entrees.moules.name": "Moules Sautées",
+    "entrees.moules": "Cozze fresche saltate in olio d'oliva, aglio, limone e prezzemolo.",
+    "tag.2pax": "2 Pers.",
+    "entrees.frito": "Un assortimento croccante di calamari, gamberi, triglie, servito con salse della casa. Da condividere in allegria.",
+    "entrees.crevettes.name": "Crevettes Sautées à l'Ail",
+    "entrees.crevettes": "Gamberi saltati in olio d'oliva con aglio, pomodorini e prezzemolo fresco.",
+    "pasta.eyebrow": "I classici italiani",
+    "pasta.alfredo": "Penne con pollo, funghi, panna, parmigiano e basilico. Una ricetta cremosa ispirata ai classici italiani.",
+    "pasta.safran.name": "Safran & Crevettes",
+    "pasta.safran": "Penne alla crema di zafferano, gamberi, gamberetti, uova di lompo, parmigiano, basilico e pomodori secchi.",
+    "pasta.fmblanche.name": "Fruits de Mer Sauce Blanche",
+    "pasta.fmblanche": "Spaghetti ai frutti di mare in una salsa cremosa, con pomodorini e basilico fresco. Dolcezza e generosità.",
+    "pasta.aglio": "Linguine saltate in olio d'oliva, aglio, prezzemolo & peperoncino.",
+    "pasta.arrabiata": "Spaghetti in salsa di pomodoro piccante con aglio, cipolla, pomodorini, olio d'oliva, prezzemolo e peperoncino di Cayenna.",
+    "pasta.fruitsmer.name": "Fruits de Mer",
+    "pasta.fruitsmer": "Spaghetti con calamari, cozze, gamberi e gamberetti, preparati con aglio e olio d'oliva o in salsa di pomodoro al basilico.",
+    "pasta.burrata": "Pasta al pesto cremoso, burrata fondente, pomodori secchi e pistacchi tritati. Una ricetta golosa e soleggiata.",
+    "pasta.vongoli": "Linguine alle vongole, aglio, olio d'oliva, prezzemolo e basilico. Un grande classico delle coste italiane.",
+    "pasta.pesto": "Spaghetti al pesto, panna, parmigiano, pinoli & pomodori secchi.",
+    "pasta.truffe.name": "Truffe Noir",
+    "pasta.truffe": "Linguine alla crema di tartufo, funghi, parmigiano e olio d'oliva. Un'esperienza ricca e raffinata.",
+    "risotto.eyebrow": "Cremoso & generoso",
+    "risotto.fruitsmer.name": "Fruits de Mer",
+    "risotto.fruitsmer": "Risotto cremoso al parmigiano, generosamente guarnito con frutti di mare.",
+    "risotto.safran.name": "Safran & Poulet",
+    "risotto.safran": "Risotto cremoso allo zafferano, parmigiano e pollo.",
+    "risotto.truffe.name": "Truffe Noir",
+    "risotto.truffe": "Risotto cremoso al tartufo nero, funghi & parmigiano.",
+    "risotto.pesto": "Risotto cremoso al pesto, pinoli & parmigiano.",
+    "ravioli.eyebrow": "Farciti con amore",
+    "ravioli.saumon.name": "Saumon & Crevettes",
+    "ravioli.saumon": "Ravioli serviti in una crema leggera al salmone, gamberi, pomodoro, limone e aneto.",
+    "ravioli.ricotta.name": "Ricotta Épinard",
+    "ravioli.ricotta": "Ravioli farciti con ricotta e spinaci, nappati con salsa alla panna, noci e parmigiano.",
+    "ravioli.fromages.name": "4 Fromages",
+    "ravioli.fromages": "Ravioli in una salsa cremosa al camembert, cheddar, gorgonzola & parmigiano.",
+    "ravioli.truffe.name": "Truffe Noir",
+    "ravioli.truffe": "Ravioli alla crema di tartufo e funghi freschi.",
+    "terre.eyebrow": "Carni & grigliate",
+    "terre.title": "Piatti di Terra",
+    "terre.parmigiana": "Scaloppina di pollo gratinata con mozzarella e parmigiano. Un grande classico confortante.",
+    "terre.farci.name": "Poulet Farci Ricotta & Épinards",
+    "terre.farci": "Suprema di pollo farcita con ricotta e spinaci, delicatamente gratinata. Una ricetta generosa e fondente.",
+    "terre.cotegratine.name": "Côte à l'Os Gratiné",
+    "terre.cotegratine": "Costata gratinata al formaggio mozzarella.",
+    "terre.cotegrille.name": "Côte à l'Os Grillé",
+    "terre.cotegrille": "Costata alla griglia, un piatto saporito e succoso.",
+    "mer.eyebrow": "Tesori del Mediterraneo",
+    "mer.title": "Piatti di Mare",
+    "mer.toscane": "Trancio di salmone in una salsa cremosa agli spinaci e pomodorini.",
+    "mer.saumongrille.name": "Saumon Grillé",
+    "mer.saumongrille": "Filetto di salmone grigliato alla perfezione, condito con semplicità per esaltare tutta la finezza del pesce.",
+    "mer.marmite.name": "Marmite de Pêcheur",
+    "mer.marmite": "Un mix di frutti di mare saltati con aglio, olio d'oliva, pomodorini e basilico fresco. Tutta la ricchezza del Mediterraneo.",
+    "mer.vivace.name": "Poisson Vivace",
+    "mer.vivace": "Filetto di spigola delicatamente condito e accompagnato da gamberetti. Un incontro armonioso tra terra e mare.",
+    "mer.grille.name": "Poisson Grillé",
+    "mer.grille": "Orata o spigola alla griglia.",
+    "pizza.eyebrow": "Cotte nel forno a legna",
+    "pizza.margarita": "Salsa di pomodoro fatta in casa, mozzarella, basilico fresco.",
+    "pizza.vegetarienne.name": "Végétarienne",
+    "pizza.vegetarienne": "Salsa di pomodoro fatta in casa, verdure, funghi, bocconcini, basilico fresco.",
+    "pizza.pepperoni": "Salsa di pomodoro fatta in casa, pepperoni, mozzarella, basilico fresco.",
+    "pizza.vivace": "Salsa bianca, crema di tartufo, funghi freschi, parmigiano, nocciole, rucola.",
+    "pizza.anchois": "Salsa di pomodoro fatta in casa, acciughe, olive nere, mozzarella, basilico fresco.",
+    "pizza.fromages.name": "5 Fromages",
+    "pizza.fromages": "Salsa bianca, gorgonzola, mozzarella, salsa di formaggio bocconcini.",
+    "pizza.tonno": "Salsa di pomodoro fatta in casa, tonno, olive nere, mozzarella, basilico fresco.",
+    "pizza.burrata": "Salsa al pesto, burrata fresca, pistacchio, rucola, crema di balsamico.",
+    "pizza.funghi": "Salsa di pomodoro fatta in casa, mozzarella, funghi freschi.",
+    "pizza.chevrettes.name": "Pizza Chevrettes",
+    "pizza.chevrettes": "Salsa di pomodoro fatta in casa, gamberetti, mozzarella, basilico fresco.",
+    "pizza.ricotta.name": "Ricotta Poulet",
+    "pizza.ricotta": "Salsa al pesto, mozzarella, ricotta, spinaci, noci.",
+    "pizza.marinara": "Salsa di pomodoro, aglio, origano, olio d'oliva.",
+    "desserts.eyebrow": "La dolce vita",
+    "desserts.title": "Dolci della Casa",
+    "desserts.tiramisu": "Una carezza di mascarpone, un soffio di caffè e cacao.",
+    "desserts.pannacotta": "Leggera come una nuvola italiana, delicatamente vanigliata, si scioglie in bocca con eleganza infinita.",
+    "desserts.sansebastian": "La celebre cheesecake basca dalla crosta intensamente caramellata, dal cuore fondente e cremoso.",
+    "desserts.cremebrulee.name": "Crème Brûlée",
+    "desserts.cremebrulee": "Sotto una sottile crosta di caramello dorato si nasconde una crema setosa.",
+    "desserts.fondant.name": "Fondant Chocolat",
+    "desserts.fondant": "Un guscio delicato che si apre su un cuore di cioccolato fondente, intenso e irresistibilmente goloso.",
+    "desserts.cheesecake": "Un equilibrio perfetto tra freschezza e cremosità, adagiato su un biscotto delicatamente croccante.",
+    "boissons.eyebrow": "Bevande",
+    "boissons.title": "Bevande",
+    "boissons.eau.name": "Eau Minérale",
+    "boissons.gazeuse.name": "Eau Gazéifiée",
+    "boissons.biere.name": "Bière Sans Alcool",
+    "boissons.citronnade.name": "Citronnade",
+    "cta.title": "Un desiderio che non può più aspettare?",
+    "cta.desc": "Prenota il tuo tavolo da Vivace in pochi secondi.",
+    "cta.btn": "Prenota su WhatsApp",
+    "footer.tagline": "Cucina italiana autentica, in un'atmosfera che vi avvolge.",
+    "footer.galerie": "Galleria",
+    "footer.made": "Fatto con 🍝 a Parigi",
+    "wa.label": "Prenota"
+  },
+
+  en: {
+    "banner.eyebrow": "Our menu",
+    "banner.title": "The menu",
+    "banner.desc": "Carefully selected ingredients, time-honoured recipes — every dish is crafted to tell the story of Italy.",
+    "tab.salades": "Salads",
+    "tab.carpaccio": "Carpaccio",
+    "tab.entrees": "Hot Starters",
+    "tab.pasta": "Pasta",
+    "tab.risotto": "Risotto",
+    "tab.ravioli": "Ravioli",
+    "tab.terre": "Meat Dishes",
+    "tab.mer": "Seafood Dishes",
+    "tab.pizza": "Pizza",
+    "tab.desserts": "Desserts",
+    "tab.boissons": "Drinks",
+    "salades.eyebrow": "Freshness & colour",
+    "salades.title": "Our Salads",
+    "salades.caprese": "Cherry tomatoes, mozzarella & bocconcini, fresh rocket, basil, house vinaigrette & balsamic cream.",
+    "salades.burrata": "Creamy burrata, rocket, cherry tomatoes, mushrooms, grilled aubergines, courgettes, pesto, crushed pistachios & balsamic cream.",
+    "salades.fruitsmer.name": "Salade Fruits de Mer",
+    "salades.fruitsmer": "Lettuce, cherry tomatoes, calamari, mussels, prawns & shrimps, tossed in a lemon vinaigrette and served with fresh kiwi.",
+    "salades.cesar.name": "Salade César",
+    "salades.cesar": "Crisp lettuce, grilled chicken, parmesan, cherry tomatoes, rocket, golden croutons, sliced almonds, Caesar dressing & balsamic cream.",
+    "salades.vivace": "Lettuce, lollo rosso, prawns, cherry tomatoes, fresh peach, parmesan, pine nuts & saffron vinaigrette.",
+    "salades.roquettes.name": "Salade Roquettes",
+    "salades.roquettes": "Rocket salad, cherry tomatoes, pine nuts, parmesan, olive oil.",
+    "carpaccio.eyebrow": "Finesse & elegance",
+    "carpaccio.manzo": "Thin slices of beef, rocket, parmesan shavings, extra virgin olive oil & lemon. A fresh and refined Italian classic.",
+    "carpaccio.crevettes.name": "Carpaccio de Crevettes",
+    "carpaccio.crevettes": "Delicate raw prawns enhanced by a lemon vinaigrette, extra virgin olive oil and a touch of dill.",
+    "entrees.eyebrow": "To start",
+    "entrees.title": "Hot Starters",
+    "entrees.parmigiana.name": "Aubergines à la Parmigiana",
+    "entrees.parmigiana": "Tender aubergines gratinated with mozzarella & parmesan, finished with a drizzle of olive oil.",
+    "entrees.moules.name": "Moules Sautées",
+    "entrees.moules": "Fresh mussels sautéed in olive oil, garlic, lemon & parsley.",
+    "tag.2pax": "2 Pax",
+    "entrees.frito": "A crispy assortment of calamari, prawns, red mullet, served with house sauces. Perfect for sharing.",
+    "entrees.crevettes.name": "Crevettes Sautées à l'Ail",
+    "entrees.crevettes": "Prawns sautéed in olive oil with garlic, cherry tomatoes & fresh parsley.",
+    "pasta.eyebrow": "Italian classics",
+    "pasta.alfredo": "Penne with chicken, mushrooms, cream, parmesan & basil. A creamy recipe inspired by Italian classics.",
+    "pasta.safran.name": "Safran & Crevettes",
+    "pasta.safran": "Penne in saffron cream, prawns, shrimps, lumpfish roe, parmesan, basil & sun-dried tomatoes.",
+    "pasta.fmblanche.name": "Fruits de Mer Sauce Blanche",
+    "pasta.fmblanche": "Spaghetti with seafood in a creamy sauce, topped with cherry tomatoes & fresh basil. Smooth and generous.",
+    "pasta.aglio": "Linguine sautéed in olive oil, garlic, parsley & chilli.",
+    "pasta.arrabiata": "Spaghetti in a spicy tomato sauce with garlic, onion, cherry tomatoes, olive oil, parsley & cayenne pepper.",
+    "pasta.fruitsmer.name": "Fruits de Mer",
+    "pasta.fruitsmer": "Spaghetti with calamari, mussels, prawns & shrimps, prepared with garlic & olive oil or in a basil-scented tomato sauce.",
+    "pasta.burrata": "Pasta with creamy pesto, melting burrata, sun-dried tomatoes & crushed pistachios. A sunny, indulgent recipe.",
+    "pasta.vongoli": "Linguine with clams, garlic, olive oil, parsley & basil. A great classic from the Italian coast.",
+    "pasta.pesto": "Spaghetti with pesto, cream, parmesan, pine nuts & sun-dried tomatoes.",
+    "pasta.truffe.name": "Truffe Noir",
+    "pasta.truffe": "Linguine in truffle cream, mushrooms, parmesan & olive oil. A rich and refined experience.",
+    "risotto.eyebrow": "Creamy & generous",
+    "risotto.fruitsmer.name": "Fruits de Mer",
+    "risotto.fruitsmer": "Creamy parmesan risotto, generously topped with seafood.",
+    "risotto.safran.name": "Safran & Poulet",
+    "risotto.safran": "Creamy saffron risotto with parmesan & chicken.",
+    "risotto.truffe.name": "Truffe Noir",
+    "risotto.truffe": "Creamy black truffle risotto, mushrooms & parmesan.",
+    "risotto.pesto": "Creamy pesto risotto, pine nuts & parmesan.",
+    "ravioli.eyebrow": "Filled with love",
+    "ravioli.saumon.name": "Saumon & Crevettes",
+    "ravioli.saumon": "Ravioli served in a light cream with salmon, prawns, tomato, lemon & dill.",
+    "ravioli.ricotta.name": "Ricotta Épinard",
+    "ravioli.ricotta": "Ravioli filled with ricotta & spinach, coated in cream sauce with walnuts & parmesan.",
+    "ravioli.fromages.name": "4 Fromages",
+    "ravioli.fromages": "Ravioli in a creamy sauce with camembert, cheddar, gorgonzola & parmesan.",
+    "ravioli.truffe.name": "Truffe Noir",
+    "ravioli.truffe": "Ravioli in truffle cream with fresh mushrooms.",
+    "terre.eyebrow": "Meats & grills",
+    "terre.title": "Meat Dishes",
+    "terre.parmigiana": "Chicken escalope gratinated with mozzarella & parmesan. A comforting classic.",
+    "terre.farci.name": "Poulet Farci Ricotta & Épinards",
+    "terre.farci": "Chicken supreme stuffed with ricotta & spinach, delicately gratinated. A generous, melting recipe.",
+    "terre.cotegratine.name": "Côte à l'Os Gratiné",
+    "terre.cotegratine": "Bone-in rib gratinated with mozzarella cheese.",
+    "terre.cotegrille.name": "Côte à l'Os Grillé",
+    "terre.cotegrille": "Grilled bone-in rib, a flavourful and juicy dish.",
+    "mer.eyebrow": "Mediterranean treasures",
+    "mer.title": "Seafood Dishes",
+    "mer.toscane": "Salmon fillet in a creamy sauce with spinach & cherry tomatoes.",
+    "mer.saumongrille.name": "Saumon Grillé",
+    "mer.saumongrille": "Salmon fillet grilled to perfection, simply seasoned to reveal the full finesse of the fish.",
+    "mer.marmite.name": "Marmite de Pêcheur",
+    "mer.marmite": "A medley of seafood sautéed with garlic, olive oil, cherry tomatoes & fresh basil. All the richness of the Mediterranean.",
+    "mer.vivace.name": "Poisson Vivace",
+    "mer.vivace": "Delicately seasoned sea bass fillet accompanied by shrimps. A harmonious meeting of land and sea.",
+    "mer.grille.name": "Poisson Grillé",
+    "mer.grille": "Grilled sea bream or sea bass.",
+    "pizza.eyebrow": "Wood-fired",
+    "pizza.margarita": "House tomato sauce, mozzarella, fresh basil.",
+    "pizza.vegetarienne.name": "Végétarienne",
+    "pizza.vegetarienne": "House tomato sauce, vegetables, mushrooms, bocconcini, fresh basil.",
+    "pizza.pepperoni": "House tomato sauce, pepperoni, mozzarella, fresh basil.",
+    "pizza.vivace": "White sauce, truffle cream, fresh mushrooms, parmesan, hazelnuts, rocket.",
+    "pizza.anchois": "House tomato sauce, anchovies, black olives, mozzarella, fresh basil.",
+    "pizza.fromages.name": "5 Fromages",
+    "pizza.fromages": "White sauce, gorgonzola, mozzarella, bocconcini cheese sauce.",
+    "pizza.tonno": "House tomato sauce, tuna, black olives, mozzarella, fresh basil.",
+    "pizza.burrata": "Pesto sauce, fresh burrata, pistachio, rocket, balsamic cream.",
+    "pizza.funghi": "House tomato sauce, mozzarella, fresh mushrooms.",
+    "pizza.chevrettes.name": "Pizza Chevrettes",
+    "pizza.chevrettes": "House tomato sauce, shrimps, mozzarella, fresh basil.",
+    "pizza.ricotta.name": "Ricotta Poulet",
+    "pizza.ricotta": "Pesto sauce, mozzarella, ricotta, spinach, walnuts.",
+    "pizza.marinara": "Tomato sauce, garlic, oregano, olive oil.",
+    "desserts.eyebrow": "La dolce vita",
+    "desserts.title": "Signature Desserts",
+    "desserts.tiramisu": "A caress of mascarpone, a breath of coffee and cocoa.",
+    "desserts.pannacotta": "Light as an Italian cloud, delicately vanilla-scented, it melts in your mouth with infinite elegance.",
+    "desserts.sansebastian": "The famous Basque cheesecake with an intensely caramelised crust and a creamy, melting heart.",
+    "desserts.cremebrulee.name": "Crème Brûlée",
+    "desserts.cremebrulee": "Beneath a thin crust of golden caramel lies a silky cream.",
+    "desserts.fondant.name": "Fondant Chocolat",
+    "desserts.fondant": "A delicate shell opening onto a flowing chocolate heart — intense and irresistibly indulgent.",
+    "desserts.cheesecake": "A perfect balance of freshness and smoothness, resting on a delicately crispy biscuit.",
+    "boissons.eyebrow": "Refreshments",
+    "boissons.title": "Drinks",
+    "boissons.eau.name": "Eau Minérale",
+    "boissons.gazeuse.name": "Eau Gazéifiée",
+    "boissons.biere.name": "Bière Sans Alcool",
+    "boissons.citronnade.name": "Citronnade",
+    "cta.title": "A craving that can't wait?",
+    "cta.desc": "Book your table at Vivace in seconds.",
+    "cta.btn": "Book on WhatsApp",
+    "footer.tagline": "Authentic Italian cuisine, in an atmosphere that wraps around you.",
+    "footer.galerie": "Gallery",
+    "footer.made": "Made with 🍝 in Paris",
+    "wa.label": "Book"
+  },
+
+  ar: {
+    "banner.eyebrow": "قائمة الطعام",
+    "banner.title": "القائمة",
+    "banner.desc": "مكوّنات مختارة بعناية، وصفات متوارثة — كل طبق صُمِّم ليروي حكاية إيطاليا.",
+    "tab.salades": "سلطات",
+    "tab.carpaccio": "كارباتشو",
+    "tab.entrees": "مقبلات ساخنة",
+    "tab.pasta": "باستا",
+    "tab.risotto": "ريزوتو",
+    "tab.ravioli": "رافيولي",
+    "tab.terre": "أطباق اللحوم",
+    "tab.mer": "أطباق البحر",
+    "tab.pizza": "بيتزا",
+    "tab.desserts": "حلويات",
+    "tab.boissons": "مشروبات",
+    "salades.eyebrow": "نضارة وألوان",
+    "salades.title": "سلطاتنا",
+    "salades.caprese": "طماطم كرزية، موزاريلا وبوكونتشيني، جرجير طازج، ريحان، صلصة خل منزلية وكريمة بلسمية.",
+    "salades.burrata": "بوراتا كريمية، جرجير، طماطم كرزية، فطر، باذنجان مشوي، كوسا، بيستو، فستق مجروش وكريمة بلسمية.",
+    "salades.fruitsmer.name": "Salade Fruits de Mer",
+    "salades.fruitsmer": "خس، طماطم كرزية، كاليماري، بلح البحر، جمبري وقريدس، مع صلصة خل الليمون ومزيّنة بكيوي طازج.",
+    "salades.cesar.name": "Salade César",
+    "salades.cesar": "خس مقرمش، دجاج مشوي، بارميزان، طماطم كرزية، جرجير، كروتون ذهبي، لوز شرائح، صلصة سيزر وكريمة بلسمية.",
+    "salades.vivace": "خس، لولو روسو، جمبري، طماطم كرزية، خوخ طازج، بارميزان، صنوبر وصلصة الزعفران.",
+    "salades.roquettes.name": "Salade Roquettes",
+    "salades.roquettes": "سلطة جرجير، طماطم كرزية، صنوبر، بارميزان، زيت زيتون.",
+    "carpaccio.eyebrow": "رقّة وأناقة",
+    "carpaccio.manzo": "شرائح لحم بقر رقيقة، جرجير، رقائق بارميزان، زيت زيتون بكر ممتاز وليمون. كلاسيكي إيطالي منعش وراقي.",
+    "carpaccio.crevettes.name": "Carpaccio de Crevettes",
+    "carpaccio.crevettes": "جمبري نيئ رقيق، مُعزَّز بصلصة خل الليمون، زيت زيتون بكر ممتاز ولمسة من الشبت.",
+    "entrees.eyebrow": "للبداية",
+    "entrees.title": "مقبلات ساخنة",
+    "entrees.parmigiana.name": "Aubergines à la Parmigiana",
+    "entrees.parmigiana": "باذنجان طري مغطى بالموزاريلا والبارميزان، مع رشة زيت زيتون.",
+    "entrees.moules.name": "Moules Sautées",
+    "entrees.moules": "بلح بحر طازج مقلي بزيت الزيتون، ثوم، ليمون وبقدونس.",
+    "tag.2pax": "لشخصين",
+    "entrees.frito": "تشكيلة مقرمشة من الكاليماري، الجمبري، وسمك البربوني، تُقدَّم مع صلصات منزلية. للمشاركة بكل وُدّ.",
+    "entrees.crevettes.name": "Crevettes Sautées à l'Ail",
+    "entrees.crevettes": "جمبري مقلي بزيت الزيتون مع ثوم، طماطم كرزية وبقدونس طازج.",
+    "pasta.eyebrow": "الكلاسيكيات الإيطالية",
+    "pasta.alfredo": "بيني بالدجاج، فطر، كريمة، بارميزان وريحان. وصفة كريمية مستوحاة من الكلاسيكيات الإيطالية.",
+    "pasta.safran.name": "Safran & Crevettes",
+    "pasta.safran": "بيني بكريمة الزعفران، جمبري، قريدس، بيض السمك، بارميزان، ريحان وطماطم مجففة.",
+    "pasta.fmblanche.name": "Fruits de Mer Sauce Blanche",
+    "pasta.fmblanche": "سباغيتي بثمار البحر في صلصة كريمية، مع طماطم كرزية وريحان طازج.",
+    "pasta.aglio": "لينغويني مقلية بزيت الزيتون، ثوم، بقدونس وفلفل حار.",
+    "pasta.arrabiata": "سباغيتي في صلصة طماطم حارة مع ثوم، بصل، طماطم كرزية، زيت زيتون، بقدونس وفلفل كايين.",
+    "pasta.fruitsmer.name": "Fruits de Mer",
+    "pasta.fruitsmer": "سباغيتي بالكاليماري، بلح البحر، جمبري وقريدس، محضّرة بالثوم وزيت الزيتون أو في صلصة طماطم بالريحان.",
+    "pasta.burrata": "باستا بالبيستو الكريمي، بوراتا ذائبة، طماطم مجففة وفستق مجروش. وصفة شهية ومشرقة.",
+    "pasta.vongoli": "لينغويني بالمحار، ثوم، زيت زيتون، بقدونس وريحان. كلاسيكي كبير من السواحل الإيطالية.",
+    "pasta.pesto": "سباغيتي بالبيستو، كريمة، بارميزان، صنوبر وطماطم مجففة.",
+    "pasta.truffe.name": "Truffe Noir",
+    "pasta.truffe": "لينغويني بكريمة الكمأة، فطر، بارميزان وزيت زيتون. تجربة غنية وراقية.",
+    "risotto.eyebrow": "كريمي وسخي",
+    "risotto.fruitsmer.name": "Fruits de Mer",
+    "risotto.fruitsmer": "ريزوتو كريمي بالبارميزان، مغطى بسخاء بثمار البحر.",
+    "risotto.safran.name": "Safran & Poulet",
+    "risotto.safran": "ريزوتو كريمي بالزعفران، بارميزان ودجاج.",
+    "risotto.truffe.name": "Truffe Noir",
+    "risotto.truffe": "ريزوتو كريمي بالكمأة السوداء، فطر وبارميزان.",
+    "risotto.pesto": "ريزوتو كريمي بالبيستو، صنوبر وبارميزان.",
+    "ravioli.eyebrow": "محشو بحب",
+    "ravioli.saumon.name": "Saumon & Crevettes",
+    "ravioli.saumon": "رافيولي في كريمة خفيفة بالسلمون، جمبري، طماطم، ليمون وشبت.",
+    "ravioli.ricotta.name": "Ricotta Épinard",
+    "ravioli.ricotta": "رافيولي محشو بالريكوتا والسبانخ، مغطى بصلصة كريمية مع جوز وبارميزان.",
+    "ravioli.fromages.name": "4 Fromages",
+    "ravioli.fromages": "رافيولي في صلصة كريمية بالكاممبير، شيدر، غورغونزولا وبارميزان.",
+    "ravioli.truffe.name": "Truffe Noir",
+    "ravioli.truffe": "رافيولي بكريمة الكمأة وفطر طازج.",
+    "terre.eyebrow": "لحوم ومشويات",
+    "terre.title": "أطباق اللحوم",
+    "terre.parmigiana": "إسكالوب دجاج مغطى بالموزاريلا والبارميزان. كلاسيكي مريح.",
+    "terre.farci.name": "Poulet Farci Ricotta & Épinards",
+    "terre.farci": "صدر دجاج محشو بالريكوتا والسبانخ، مخبوز بلطف. وصفة سخية وذائبة.",
+    "terre.cotegratine.name": "Côte à l'Os Gratiné",
+    "terre.cotegratine": "ضلع بالعظم محمّر بجبن الموزاريلا.",
+    "terre.cotegrille.name": "Côte à l'Os Grillé",
+    "terre.cotegrille": "ضلع بالعظم مشوي، طبق لذيذ وعصيري.",
+    "mer.eyebrow": "كنوز البحر المتوسط",
+    "mer.title": "أطباق البحر",
+    "mer.toscane": "شريحة سلمون في صلصة كريمية بالسبانخ والطماطم الكرزية.",
+    "mer.saumongrille.name": "Saumon Grillé",
+    "mer.saumongrille": "فيليه سلمون مشوي بإتقان، متبّل ببساطة لإبراز كل رقة السمك.",
+    "mer.marmite.name": "Marmite de Pêcheur",
+    "mer.marmite": "مزيج من ثمار البحر المقلية بالثوم، زيت الزيتون، طماطم كرزية وريحان طازج. كل غنى البحر المتوسط.",
+    "mer.vivace.name": "Poisson Vivace",
+    "mer.vivace": "فيليه قاروص متبّل بلطف ومرفق بالقريدس. لقاء منسجم بين البر والبحر.",
+    "mer.grille.name": "Poisson Grillé",
+    "mer.grille": "دنيس أو قاروص مشوي.",
+    "pizza.eyebrow": "مخبوزة على الحطب",
+    "pizza.margarita": "صلصة طماطم منزلية، موزاريلا، ريحان طازج.",
+    "pizza.vegetarienne.name": "Végétarienne",
+    "pizza.vegetarienne": "صلصة طماطم منزلية، خضروات، فطر، بوكونتشيني، ريحان طازج.",
+    "pizza.pepperoni": "صلصة طماطم منزلية، بيبروني، موزاريلا، ريحان طازج.",
+    "pizza.vivace": "صلصة بيضاء، كريمة كمأة، فطر طازج، بارميزان، بندق، جرجير.",
+    "pizza.anchois": "صلصة طماطم منزلية، أنشوفة، زيتون أسود، موزاريلا، ريحان طازج.",
+    "pizza.fromages.name": "5 Fromages",
+    "pizza.fromages": "صلصة بيضاء، غورغونزولا، موزاريلا، صلصة جبن بوكونتشيني.",
+    "pizza.tonno": "صلصة طماطم منزلية، تونة، زيتون أسود، موزاريلا، ريحان طازج.",
+    "pizza.burrata": "صلصة بيستو، بوراتا طازجة، فستق، جرجير، كريمة بلسمية.",
+    "pizza.funghi": "صلصة طماطم منزلية، موزاريلا، فطر طازج.",
+    "pizza.chevrettes.name": "Pizza Chevrettes",
+    "pizza.chevrettes": "صلصة طماطم منزلية، قريدس، موزاريلا، ريحان طازج.",
+    "pizza.ricotta.name": "Ricotta Poulet",
+    "pizza.ricotta": "صلصة بيستو، موزاريلا، ريكوتا، سبانخ، جوز.",
+    "pizza.marinara": "صلصة طماطم، ثوم، أوريغانو، زيت زيتون.",
+    "desserts.eyebrow": "الحياة الحلوة",
+    "desserts.title": "حلويات مميزة",
+    "desserts.tiramisu": "لمسة ماسكاربوني، نفحة قهوة وكاكاو.",
+    "desserts.pannacotta": "خفيفة كسحابة إيطالية، بنكهة الفانيليا الرقيقة، تذوب في الفم بأناقة لا نهائية.",
+    "desserts.sansebastian": "تشيز كيك الباسك الشهير بقشرته الكراميلية الكثيفة وقلبه الذائب الكريمي.",
+    "desserts.cremebrulee.name": "Crème Brûlée",
+    "desserts.cremebrulee": "تحت قشرة رقيقة من الكراميل الذهبي تختبئ كريمة حريرية.",
+    "desserts.fondant.name": "Fondant Chocolat",
+    "desserts.fondant": "قشرة رقيقة تنفتح على قلب شوكولا سائل، كثيف ولا يُقاوَم.",
+    "desserts.cheesecake": "توازن مثالي بين النضارة والنعومة، على بسكويت مقرمش بلطف.",
+    "boissons.eyebrow": "المشروبات",
+    "boissons.title": "المشروبات",
+    "boissons.eau.name": "Eau Minérale",
+    "boissons.gazeuse.name": "Eau Gazéifiée",
+    "boissons.biere.name": "Bière Sans Alcool",
+    "boissons.citronnade.name": "Citronnade",
+    "cta.title": "رغبة لا تحتمل الانتظار؟",
+    "cta.desc": "احجز طاولتك في فيفاتشي في ثوانٍ.",
+    "cta.btn": "احجز عبر واتساب",
+    "footer.tagline": "مطبخ إيطالي أصيل، في أجواء تحتضنكم.",
+    "footer.galerie": "معرض الصور",
+    "footer.made": "صُنع بـ 🍝 في باريس",
+    "wa.label": "احجز"
+  }
+};
+
+const langNames = { fr: "Français", it: "Italiano", en: "English", ar: "العربية" };
+
+// ——— Language Switcher Logic ———
+const langSwitcher = document.getElementById('langSwitcher');
+const langBtn = document.getElementById('langBtn');
+const langDropdown = document.getElementById('langDropdown');
+const langLabel = document.getElementById('langLabel');
+
+langBtn.addEventListener('click', () => {
+  const isOpen = langSwitcher.classList.toggle('open');
+  langBtn.setAttribute('aria-expanded', isOpen);
+});
+
+document.addEventListener('click', (e) => {
+  if (!langSwitcher.contains(e.target)) {
+    langSwitcher.classList.remove('open');
+    langBtn.setAttribute('aria-expanded', 'false');
+  }
+});
+
+langDropdown.querySelectorAll('.lang-option').forEach(opt => {
+  opt.addEventListener('click', () => {
+    const lang = opt.dataset.lang;
+    setLanguage(lang);
+    langSwitcher.classList.remove('open');
+    langBtn.setAttribute('aria-expanded', 'false');
+  });
+});
+
+function setLanguage(lang) {
+  const t = translations[lang];
+  if (!t) return;
+
+  // Update all [data-i18n] elements (dish/product NAMES no longer carry data-i18n,
+  // so they always stay in the original French wording — only descriptions, tabs,
+  // headings and UI labels are translated)
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.getAttribute('data-i18n');
+    if (t[key] !== undefined) {
+      el.textContent = t[key];
+    }
+  });
+
+  // Update active state in dropdown
+  langDropdown.querySelectorAll('.lang-option').forEach(opt => {
+    opt.classList.toggle('active', opt.dataset.lang === lang);
+  });
+
+  // Update button label
+  langLabel.textContent = langNames[lang];
+
+  // Set dir for Arabic
+  document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+  document.documentElement.lang = lang;
+
+  // Store preference
+  localStorage.setItem('vivace-lang', lang);
+}
+
+// ——— Restore saved language ———
+const savedLang = localStorage.getItem('vivace-lang');
+if (savedLang && savedLang !== 'fr') {
+  setLanguage(savedLang);
+}
+
+// ——— Burger / Nav ———
+const burger = document.getElementById('burger');
+const navLinks = document.getElementById('navLinks');
+burger.addEventListener('click', () => navLinks.classList.toggle('open'));
+navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navLinks.classList.remove('open')));
+
+// ——— Reveal on scroll ———
+const revealEls = document.querySelectorAll('.reveal');
+const io = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('in'); });
+}, { threshold: 0.15 });
+revealEls.forEach(el => io.observe(el));
+
+// ——— Highlight active category tab on scroll ———
+const tabs = document.querySelectorAll('.menu-tabs a');
+const menuSections = [...tabs].map(t => document.querySelector(t.getAttribute('href')));
+const tabObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const id = '#' + entry.target.id;
+      tabs.forEach(t => t.classList.toggle('active', t.getAttribute('href') === id));
+    }
+  });
+}, { rootMargin: '-40% 0px -50% 0px' });
+menuSections.forEach(s => s && tabObserver.observe(s));
+</script>
+
+</body>
+</html>

@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vivace — Ristorante Italiano</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,450;0,9..144,600;1,9..144,400;1,9..144,500&family=Jost:wght@400;500&family=Karla:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header id="siteHeader">
+      <a href="#" class="logo"><img src="vivace.png" alt="Vivace" /></a>
+      <nav class="links" id="navLinks">
+        <a href="menu.html">Menu</a>
+        <a href="galerie.html">galerie</a>
+        <a href="#contact">Contact</a>
+        <a
+          href="https://wa.me/21650761000?text=Bonjour%2C%20je%20souhaite%20r%C3%A9server%20une%20table%20chez%20Vivace"
+          class="btn nav-cta"
+          >en savoir plus</a
+        >
+      </nav>
+      <button class="burger" id="burger" aria-label="Menu">☰</button>
+    </header>
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="top">
+      <div class="video-fallback"></div>
+      <!-- Replace with: <video autoplay muted loop playsinline poster="pasta-poster.jpg"><source src="pasta-hero.mp4" type="video/mp4"></video> -->
+      <div class="grain"></div>
+      <div class="hero-overlay"></div>
+      <div class="glow"></div>
+      <div class="hero-content">
+        <span class="eyebrow">Ristorante Italiano</span>
+        <h1>Vivace</h1>
+        <p>
+          Une cuisine italienne authentique, dans une ambiance qui vous
+          enveloppe.
+        </p>
+        <div class="hero-actions">
+          <a
+            href="https://wa.me/21650761000?text=Bonjour%2C%20je%20souhaite%20r%C3%A9server%20une%20table%20chez%20Vivace"
+            class="btn btn-primary"
+          >
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.29-1.39c1.44.79 3.06 1.2 4.71 1.2h.01c5.46 0 9.9-4.45 9.9-9.91C21.91 6.45 17.5 2 12.04 2zm5.8 14.15c-.24.68-1.4 1.31-1.94 1.39-.5.08-1.12.11-1.81-.11-.42-.13-.95-.31-1.64-.6-2.88-1.24-4.76-4.15-4.9-4.34-.14-.19-1.17-1.56-1.17-2.97 0-1.41.74-2.11 1-2.4.26-.29.57-.36.76-.36h.55c.18 0 .42-.02.65.5.24.55.82 1.94.89 2.08.07.14.11.31.02.5-.09.19-.14.31-.28.48-.14.17-.29.37-.42.5-.14.14-.28.29-.12.57.16.28.72 1.19 1.55 1.92 1.06.95 1.96 1.24 2.24 1.38.28.14.44.12.6-.07.16-.19.68-.79.86-1.06.18-.28.36-.23.6-.14.24.09 1.53.72 1.79.85.26.14.43.2.5.31.06.13.06.71-.18 1.39z"
+              />
+            </svg>
+            savoir plus sur WhatsApp
+          </a>
+          <a href="menu.html" class="btn btn-outline">Voir le menu</a>
+        </div>
+      </div>
+      <div class="scroll-cue">
+        <div class="line"></div>
+        <span class="eyebrow" style="font-size: 0.6rem">Scroll</span>
+      </div>
+    </section>
+
+    <!-- ============ INTRO ============ -->
+    <section class="wrap intro reveal" id="intro">
+      <div class="intro-text">
+        <span class="eyebrow kicker">Benvenuti</span>
+        <h2 class="section-title">Chaque plat raconte une histoire</h2>
+        <p>
+          Des recettes transmises, des produits choisis avec soin, et une salle
+          pensée comme un cocon — pour que chaque repas ait le goût d'un moment
+          volé à l'Italie.
+        </p>
+        <div class="intro-rule"></div>
+      </div>
+      <div class="intro-photo">
+        <img
+          src="vivace2.png"
+          alt="Salle du restaurant Vivace, ambiance chaleureuse"
+        />
+      </div>
+    </section>
+
+    <div class="vine-divider">
+      <svg viewBox="0 0 140 34" fill="none">
+        <path
+          d="M2 17 Q35 2 70 17 T138 17"
+          stroke="#A8362A"
+          stroke-width="1.4"
+        />
+        <circle cx="35" cy="9" r="3" fill="#A8362A" />
+        <circle cx="105" cy="25" r="3" fill="#A8362A" />
+      </svg>
+    </div>
+
+    <!-- ============ SIGNATURE DISHES ============ -->
+    <section class="dishes reveal" id="signature-dishes">
+      <div class="wrap">
+        <div class="dishes-head">
+          <div>
+            <span class="eyebrow kicker">Da non perdere</span>
+            <h2 class="section-title">Nos incontournables</h2>
+          </div>
+          <p>
+            Une sélection de plats qui font revenir nos habitués, préparés
+            chaque jour avec des produits de saison.
+          </p>
+        </div>
+        <div class="dish-grid">
+          <div class="dish-card">
+            <div class="ph"><img src="tiramiso.jpg" alt="Tiramisu" /></div>
+            <div class="info">
+              <span class="dish-tag">Raviolli</span>
+              <h3>saumon & crevettes</h3>
+              <p class="desc">
+                raviollis servis dans un créme légère au saumon , crevettes ,
+                tomate , citron et aneth
+              </p>
+              <span class="dish-price">45dt</span>
+            </div>
+          </div>
+          <div class="dish-card">
+            <div class="ph">
+              <img src="makrouna.jpg" alt="Risotto aux champignons" />
+            </div>
+            <div class="info">
+              <span class="dish-tag">Pasta</span>
+              <h3>Truffe noir</h3>
+              <p class="desc">
+                linguinie à la crème de truffe , champignons , parmesan et huile
+                d'olive . Une exprience niche et raffinée
+              </p>
+              <span class="dish-price">38dt</span>
+            </div>
+          </div>
+          <div class="dish-card">
+            <div class="ph"><img src="saumon.jpg" alt="saumon" /></div>
+            <div class="info">
+              <span class="dish-tag">Plats de Mer</span>
+              <h3>Saumon alla Toscane</h3>
+              <p class="desc">
+                pavé de saumon dans une sauce crémeuse aux épinards et tomates
+                cerises
+              </p>
+              <span class="dish-price">48dt</span>
+            </div>
+          </div>
+          <div class="dish-card">
+            <div class="ph"><img src="fondant.jpg" alt="fondant" /></div>
+            <div class="info">
+              <span class="dish-tag">Desserts signature</span>
+              <h3>fondant chocolat</h3>
+              <p class="desc">
+                une coque délicate , qui s'ouvre sur un coeur de chocolat
+                coulant , intense et irrésistiblement gourmand.
+              </p>
+              <span class="dish-price">13dt</span>
+            </div>
+          </div>
+        </div>
+        <div class="dishes-more">
+          <a href="menu.html">Découvrir tout le menu →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ AMBIANCE ============ -->
+    <section class="ambiance reveal" id="ambiance">
+      <div class="wrap">
+        <div class="amb-head">
+          <span class="eyebrow kicker on-dark">L'expérience Vivace</span>
+          <h2 class="section-title" style="margin: 0 auto">
+            Une ambiance qui se ressent
+          </h2>
+          <p>
+            Lumière tamisée, bois chaud, bougainvillier rouge sur les murs —
+            Vivace n'est pas qu'un restaurant, c'est une pause.
+          </p>
+        </div>
+        <div class="amb-grid">
+          <div class="cell c1">
+            <img src="photo1.jpg" alt="Table dressée chez Vivace" />
+          </div>
+          <div class="cell c2">
+            <img src="photo2.jpg" alt="Bougainvillier rouge" />
+          </div>
+          <div class="cell c3">
+            <img src="photo10.png" alt="Éclairage chaleureux" />
+          </div>
+          <div class="cell c4">
+            <img src="photo6.jpg" alt="Cuisine italienne" />
+          </div>
+          <div class="cell c5">
+            <img src="photo3.jpg" alt="Salle chaleureuse" />
+          </div>
+          <div class="cell c6">
+            <img src="photo5.jpg" alt="Détail décoration" />
+          </div>
+        </div>
+        <div class="dishes-more" style="margin-top: 40px">
+          <a href="galerie.html" class="btn btn-outline dark">Voir plus →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TESTIMONIALS ============ -->
+    <section class="testimonials reveal">
+      <div class="wrap">
+        <div class="amb-head" style="margin-bottom: 48px">
+          <span class="eyebrow kicker">Ils en parlent</span>
+          <h2 class="section-title" style="margin: 0 auto; color: var(--encre)">
+            La confiance de nos habitués
+          </h2>
+        </div>
+        <div class="t-grid">
+          <div class="t-card">
+            <span class="mark">”</span>
+            <div class="t-stars">★★★★★</div>
+            <p>
+              Excellente découverte ! J’ai goûté un risotto et une pizza, et les deux étaient vraiment délicieux. Les produits sont de qualité, les saveurs sont bien équilibrées et la présentation est soignée. Le cadre est élégant, l’ambiance agréable et le personnel très accueillant. Une très belle adresse à Hammamet centre ville que je recommande sans hésiter. Bravo à toute l’équipe de Vivace !
+            </p>
+            <div class="t-name">*Omar romene</div>
+          </div>
+          <div class="t-card">
+            <span class="mark">”</span>
+            <div class="t-stars">★★★★★</div>
+            <p>
+              Très bon restaurant. Les plats sont délicieux, le personnel est sympathique et à l’écoute. Je recommande vivement.
+            </p>
+            <div class="t-name">Samira Darwich</div>
+          </div>
+          <div class="t-card">
+            <span class="mark">”</span>
+            <div class="t-stars">★★★★★</div>
+            <p>
+              Bonsoir
+              Visite ce soir Viivace
+              Excellente cuisine.tres  bon accueil à recommander
+            </p>
+            <div class="t-name">Bernard Brunet</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ LOCATION / FINAL CTA ============ -->
+    <section class="location reveal" id="contact">
+      <div class="wrap loc-grid">
+        <div class="loc-map">
+          <a
+            href="https://maps.app.goo.gl/rcdYyapdrvYCoYND6"
+            target="_blank"
+            rel="noopener"
+          >
+            <img src="map.png" alt="Localisation du restaurant Vivace sur Google Maps" />
+          </a>
+        </div>
+        <div>
+          <span class="eyebrow" style="color: var(--or)"
+            >Venez nous rencontrer</span
+          >
+          <h2
+            class="section-title"
+            style="color: var(--creme); margin-top: 14px"
+          >
+            On vous garde une table ce soir ?
+          </h2>
+          <p class="loc-addr" style="margin-top: 20px">
+            Av Habib Bourgiba , Hammamet 8050
+          </p>
+          <div class="hours-list">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div class="foot-social" style="margin-bottom: 26px">
+            <a href="https://www.facebook.com/profile.php?id=61591700709214&sk=about" target="_blank" rel="noopener" aria-label="Vivace sur Facebook">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 12.06C22 6.51 17.52 2 12 2S2 6.51 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.91h2.54V9.85c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.23.2 2.23.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.91h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg>
+            </a>
+            <a href="https://www.instagram.com/vivace_26?igsi=MW9xc2ZxYXVmOWd2ag%3D%3D" target="_blank" rel="noopener" aria-label="Vivace sur Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+          </div>
+          <a
+            href="https://wa.me/21650761000?text=Bonjour%2C%20je%20souhaite%20r%C3%A9server%20une%20table%20chez%20Vivace"
+            class="btn btn-primary"
+            >Réserver sur WhatsApp</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer>
+      <div class="wrap">
+        <div class="foot-top">
+          <div>
+            <a href="#" class="logo">Vivace</a>
+            <p
+              style="
+                margin-top: 14px;
+                max-width: 260px;
+                font-size: 0.85rem;
+                opacity: 0.7;
+              "
+            >
+              Cucina italiana autentica, dans une ambiance qui vous enveloppe.
+            </p>
+          </div>
+          <nav class="foot-nav">
+            <a href="menu.html">Menu</a>
+            <a href="galerie.html">galerie</a>
+            <a href="#contact">Contact</a>
+          </nav>
+          <div class="foot-contact">
+            Av Habib Bourgiba , Hammamet 8050 <br />
+            +216 50 761 000<br />
+            <div class="foot-social">
+              <a href="https://www.facebook.com/profile.php?id=61591700709214&sk=about" target="_blank" rel="noopener" aria-label="Vivace sur Facebook">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 12.06C22 6.51 17.52 2 12 2S2 6.51 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.91h2.54V9.85c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.23.2 2.23.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.91h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg>
+              </a>
+              <a href="https://www.instagram.com/vivace_26?igsi=MW9xc2ZxYXVmOWd2ag%3D%3D" target="_blank" rel="noopener" aria-label="Vivace sur Instagram">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="foot-bottom">
+          <span>Fait avec l'amour</span>
+          <span>© 2026 Vivace26 — Tous droits réservés</span>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ============ STICKY WHATSAPP ============ -->
+    <a
+      href="https://wa.me/21650761000?text=Bonjour%2C%20je%20souhaite%20r%C3%A9server%20une%20table%20chez%20Vivace"
+      class="wa-float"
+      target="_blank"
+    >
+      <svg viewBox="0 0 24 24" fill="currentColor">
+        <path
+          d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.29-1.39c1.44.79 3.06 1.2 4.71 1.2h.01c5.46 0 9.9-4.45 9.9-9.91C21.91 6.45 17.5 2 12.04 2zm5.8 14.15c-.24.68-1.4 1.31-1.94 1.39-.5.08-1.12.11-1.81-.11-.42-.13-.95-.31-1.64-.6-2.88-1.24-4.76-4.15-4.9-4.34-.14-.19-1.17-1.56-1.17-2.97 0-1.41.74-2.11 1-2.4.26-.29.57-.36.76-.36h.55c.18 0 .42-.02.65.5.24.55.82 1.94.89 2.08.07.14.11.31.02.5-.09.19-.14.31-.28.48-.14.17-.29.37-.42.5-.14.14-.28.29-.12.57.16.28.72 1.19 1.55 1.92 1.06.95 1.96 1.24 2.24 1.38.28.14.44.12.6-.07.16-.19.68-.79.86-1.06.18-.28.36-.23.6-.14.24.09 1.53.72 1.79.85.26.14.43.2.5.31.06.13.06.71-.18 1.39z"
+        />
+      </svg>
+      Réserver
+    </a>
+
+    <script>
+      // Header background on scroll
+      const header = document.getElementById("siteHeader");
+      window.addEventListener("scroll", () => {
+        header.classList.toggle("scrolled", window.scrollY > 60);
+      });
+
+      // Mobile nav toggle
+      const burger = document.getElementById("burger");
+      const navLinks = document.getElementById("navLinks");
+      burger.addEventListener("click", () => navLinks.classList.toggle("open"));
+      navLinks
+        .querySelectorAll("a")
+        .forEach((a) =>
+          a.addEventListener("click", () => navLinks.classList.remove("open"))
+        );
+
+      // Scroll reveal
+      const revealEls = document.querySelectorAll(".reveal");
+      const io = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((e) => {
+            if (e.isIntersecting) e.target.classList.add("in");
+          });
+        },
+        { threshold: 0.15 }
+      );
+      revealEls.forEach((el) => io.observe(el));
+    </script>
+  </body>
+</html>
